@@ -3,7 +3,7 @@
 import { NextPage } from "next";
 import React from "react";
 
-const Games: NextPage = () => {
+const Games: NextPage = (props) => {
 	return <div>Games</div>;
 };
 

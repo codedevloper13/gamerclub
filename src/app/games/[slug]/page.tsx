@@ -1,9 +1,10 @@
 /** @format */
 
+import { NextPage } from "next";
 import React from "react";
 
-const GAmeItem = () => {
+const GameItem: NextPage = (props) => {
 	return <div>GAmeItem</div>;
 };
 
-export default GAmeItem;
+export default GameItem;
