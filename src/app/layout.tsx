@@ -1,10 +1,10 @@
 /** @format */
 
-
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import Header from "./components/Header/Header";
 import "./globals.css";
+import Footer from "./components/Footer/Footer";
 const poppins = Poppins({
 	subsets: ["latin"],
 	weight: ["400", "500", "700"],
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={`${poppins.variable} ${montserrat.variable}`}>
 				<Header />
 				<main className='bg-primary-gradient min-h-screen'>{children}</main>
-				<footer>Footer</footer>
+				<Footer />
 			</body>
 		</html>
 	);
