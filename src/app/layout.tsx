@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-	title: "Gamer Club",
+	title: "Gamer Club - Ultimate destination for all things gaming!",
 	description:
 		"Discover the ultimate online game sale store for unbeatable deals on your favorite titles. Explore a vast collection of gaming adventures and seize the opportunity to level up your gaming experience. Shop now and save big at our virtual gaming emporium!",
 };

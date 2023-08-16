@@ -12,7 +12,11 @@ const config: Config = {
 				montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
 			},
 			backgroundImage: {
-				"primary-gradient": "linear-gradient(180.96deg,#000000 0.82%,#4a2800 129.1%)",
+				// "primary-gradient": "linear-gradient(180.96deg,#000000 0.82%,#4a2800 129.1%)",
+				"primary-gradient": "url('/XDefiant_Background.avif')",
+			},
+			backgroundSize: {
+				"primary-gradient": "cover", // or 'contain' depending on your preference
 			},
 			colors: {
 				primary: {

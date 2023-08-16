@@ -1,9 +1,12 @@
-import Image from 'next/image'
+/** @format */
+
+import Image from "next/image";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 export default function Home() {
-  return (
-    <main>
-      Hello Worlds
-    </main>
-  )
+	return (
+		<>
+			<HeroSection />
+		</>
+	);
 }
