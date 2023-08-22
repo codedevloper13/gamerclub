@@ -9,9 +9,9 @@ export default function Home() {
 	return (
 		<>
 			<HeroSection />
-			<section className={sectionClassNames.section}>
-				<div className={sectionClassNames.trending}>
-					<h2 className={sectionClassNames.trendingTitle}>Currently Trending Games</h2>
+			<section className='px-6 sm:px-12 md:px-20 lg:px-36 mx-auto py-5 text-white'>
+				<div className='flex flex-col sm:flex-row items-center justify-between mb-8'>
+					<h2 className='font-bold text-3xl sm:mr-4'>Currently Trending Games</h2>
 				</div>
 
 				<div className='flex gap-8 flex-wrap'>
@@ -43,22 +43,6 @@ export default function Home() {
 		</>
 	);
 }
-
-const sectionClassNames = {
-	section: " px-6 sm:px-12 md:px-20 lg:px-36 mx-auto py-5 text-white",
-	trending: "flex flex-col sm:flex-row items-center justify-between mb-8",
-	trendingTitle: "font-bold text-3xl sm:mr-4",
-	trendingButton: "mt-4 sm:mt-0 px-6 py-2 rounded-md bg-primary hover:bg-primary-dark",
-	latestButton: "mt-4 sm:mt-0 px-6 py-2 rounded-md bg-primary-gradient border-2 border-primary-dark",
-	featured: "pb-24 px-6 sm:px-12 md:px-20 lg:px-36 text-white",
-	featuredContent: "mx-auto max-w-screen-xl",
-};
-
-const featuredClassNames = {
-	gameName: "font-bold text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-8",
-	gameDetails: "max-w-screen-md text-sm mb-8 md:mb-12",
-	gameImage: "h-72 md:h-96 lg:h-112 w-full object-cover rounded-lg",
-};
 
 const styles = {
 	categorySection: "bg-center bg-cover bg-no-repeat py-16 sm:py-20 md:py-28 lg:py-32",
