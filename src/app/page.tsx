@@ -4,6 +4,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection/HeroSection";
 import GameCard from "./components/GameCard/GameCard";
 import Link from "next/link";
+import GameCategoryCard from "./components/GameCategoryCard/GameCategoryCard";
 
 export default function Home() {
 	return (
@@ -40,18 +41,32 @@ export default function Home() {
 					/>
 				</Link>
 			</section>
+
+			{/* GAme Category Section Start */}
+			<section
+				style={{ backgroundImage: "url('/images/gamingCategory/category-background.jpg')" }}
+				className='bg-center bg-cover bg-no-repeat py-16 sm:py-20 md:py-28 lg:py-32'>
+				<div className='container mx-auto px-4 sm:px-6 md:px-8'>
+					<h2 className='text-center max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-primary font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 leading-[130%,187%,130%,130%]'>
+						Categories
+					</h2>
+					<p className='text-justify  bg-primary-gradient px-8 rounded-3xl py-5 max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-white text-base sm:text-lg md:text-xl lg:text-1xl mb-8'>
+						Step into the Gaming Category Section, where pixels come to life and controllers become magic wands. Immerse yourself in
+						thrilling game reviews, breaking news, and pro tips. Whether you're a casual player or a dedicated gamer, here's your portal
+						to a world of digital adventures. Discover the latest trends, unravel game mysteries, and be part of the gaming tribe. Welcome
+						to the playground where pixels and passion unite!
+					</p>
+					<div className='flex flex-wrap'>
+						{categories.map((category, index) => (
+							<GameCategoryCard categoryImage={category.image} categoryName={category.name} slug={category.slug} key={category.id} />
+						))}
+					</div>
+				</div>
+			</section>
+			{/* GAme Category Section End */}
 		</>
 	);
 }
-
-const styles = {
-	categorySection: "bg-center bg-cover bg-no-repeat py-16 sm:py-20 md:py-28 lg:py-32",
-	categoryContent: "container mx-auto px-4 sm:px-6 md:px-8",
-	categoryHeading:
-		"text-center max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-primary font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 leading-[130%,187%,130%,130%]",
-	categorySubHeading:
-		"text-center bg-primary-gradient px-8 rounded-3xl py-5 max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-8",
-};
 
 const recentGamesClasses = {
 	section: "py-16 lg:py-36 px-4 lg:px-36 text-white text-center",
@@ -96,3 +111,24 @@ const featuredGame = {
 	slug: "outlaws",
 	image: "/images/ubi-homescreen-swo-fwd23-bg-desktop.avif",
 };
+
+const categories = [
+	{
+		id: 1,
+		name: "Action",
+		slug: "action",
+		image: "https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmlnaHR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+	},
+	{
+		id: 2,
+		name: "Adventure",
+		slug: "adventure",
+		image: "https://images.unsplash.com/photo-1536751048178-14106afab4f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFjaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+	},
+	{
+		id: 3,
+		name: "Sports",
+		slug: "sports",
+		image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3BvcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+	},
+];

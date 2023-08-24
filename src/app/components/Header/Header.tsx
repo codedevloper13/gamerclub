@@ -2,7 +2,6 @@
 
 "use client";
 import React, { useState } from "react";
-import headerClassNames from "./headerClassNames";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai";
@@ -30,7 +29,7 @@ const Header = () => {
 				<nav className={`md:block ${isMobileMenuOpen ? "block" : "hidden"}`}>
 					<ul className='md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6'>
 						<li>
-							<button className='w-full hover:text-primary-light relative'>
+							<button className='w-full hover:text-primary-light relative h-12'>
 								<span>
 									Cart
 									<AiOutlineShoppingCart className='inline-block text-3xl' />
