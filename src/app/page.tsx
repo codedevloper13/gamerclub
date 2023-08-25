@@ -42,7 +42,6 @@ export default function Home() {
 				</Link>
 			</section>
 
-			{/* GAme Category Section Start */}
 			<section
 				style={{ backgroundImage: "url('/images/gamingCategory/category-background.jpg')" }}
 				className='bg-center bg-cover bg-no-repeat py-16 sm:py-20 md:py-28 lg:py-32'>
@@ -57,22 +56,15 @@ export default function Home() {
 						to the playground where pixels and passion unite!
 					</p>
 					<div className='flex flex-wrap'>
-						{categories.map((category, index) => (
+						{categories.map((category) => (
 							<GameCategoryCard categoryImage={category.image} categoryName={category.name} slug={category.slug} key={category.id} />
 						))}
 					</div>
 				</div>
 			</section>
-			{/* GAme Category Section End */}
 		</>
 	);
 }
-
-const recentGamesClasses = {
-	section: "py-16 lg:py-36 px-4 lg:px-36 text-white text-center",
-	heading: "text-3xl lg:text-4xl font-bold mb-3",
-	subHeading: "text-gray-400 max-w-xl mx-auto lg:text-lg",
-};
 
 const games = [
 	{
