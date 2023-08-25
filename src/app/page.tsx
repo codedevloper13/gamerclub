@@ -49,12 +49,11 @@ export default function Home() {
 					<h2 className='text-center max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-primary font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 leading-[130%,187%,130%,130%]'>
 						Categories
 					</h2>
-				
+
 					<p className='text-justify  bg-primary-gradient px-8 rounded-3xl py-5 max-w-md sm:max-w-lg md:max-w-2xl mx-auto text-white text-base sm:text-lg md:text-xl lg:text-1xl mb-8'>
-						Step into the Gaming Category Section, where pixels come to life and controllers become magic wands. Immerse yourself in
-						thrilling game reviews, breaking news, and pro tips. Whether you're a casual player or a dedicated gamer, here's your portal
-						to a world of digital adventures. Discover the latest trends, unravel game mysteries, and be part of the gaming tribe. Welcome
-						to the playground where pixels and passion unite!
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+						text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchange
 					</p>
 					<div className='flex flex-wrap'>
 						{categories.map((category) => (
